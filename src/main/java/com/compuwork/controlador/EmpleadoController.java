@@ -6,11 +6,11 @@ import java.util.List;
 
 public class EmpleadoController {
 
-    private static EmpleadoController instance;  // instancia única
+    private static EmpleadoController instance;
     private final List<Empleado> empleados;
     private int ultimoId;
 
-    public EmpleadoController() {  // constructor privado
+    public EmpleadoController() {
         empleados = new ArrayList<>();
         ultimoId = 0;
     }
