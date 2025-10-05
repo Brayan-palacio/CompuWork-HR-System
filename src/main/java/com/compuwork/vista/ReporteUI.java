@@ -11,7 +11,7 @@ public class ReporteUI extends JFrame {
     private EmpleadoController empleadoController;
     private DepartamentoController departamentoController;
     private JTextArea areaReportes;
-    private MainUI mainUI; // referencia al menú principal
+    private MainUI mainUI;
 
     public ReporteUI(EmpleadoController empleadoController, DepartamentoController departamentoController, MainUI mainUI) {
         this.empleadoController = empleadoController;
