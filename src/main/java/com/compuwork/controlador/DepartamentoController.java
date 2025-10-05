@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DepartamentoController {
 
-    private static DepartamentoController instance;  // Singleton
+    private static DepartamentoController instance;
     private final List<Departamento> departamentos;
     private int ultimoId;
 
@@ -23,7 +23,7 @@ public class DepartamentoController {
     }
 
     public void agregarDepartamento(String nombre) {
-        Departamento d = new Departamento(nombre); // El ID se genera automáticamente
+        Departamento d = new Departamento(nombre);
         departamentos.add(d);
     }
 
