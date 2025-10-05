@@ -4,12 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Departamento {
-    private static int contador = 1;  // Generador de IDs automáticos
+    private static int contador = 1;
     private int id;
     private String nombre;
     private List<Empleado> empleados;
 
-    // Constructor: cada departamento nuevo recibe un ID único
     public Departamento(String nombre) {
         this.id = contador++;
         this.nombre = nombre;
@@ -25,12 +24,10 @@ public class Departamento {
         return nombre;
     }
 
-    // Setter para nombre (el ID no cambia nunca)
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    // Gestión de empleados en el departamento
     public List<Empleado> getEmpleados() {
         return empleados;
     }
@@ -45,7 +42,6 @@ public class Departamento {
         empleados.removeIf(e -> e.getId() == idEmpleado);
     }
 
-    // Representación en texto (muy útil para JComboBox y depuración)
     @Override
     public String toString() {
         return nombre + " (ID: " + id + ")";
