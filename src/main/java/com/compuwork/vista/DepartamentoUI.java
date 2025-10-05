@@ -15,9 +15,8 @@ public class DepartamentoUI extends javax.swing.JFrame {
 
     private DepartamentoController departamentoController;
     private DefaultTableModel modeloTabla;
-    private MainUI mainUI; // referencia al menú principal
+    private MainUI mainUI;
 
-    // ✅ Constructor principal (con MainUI)
     public DepartamentoUI(DepartamentoController departamentoController, MainUI mainUI) {
         this.departamentoController = departamentoController;
         this.mainUI = mainUI;
@@ -26,7 +25,6 @@ public class DepartamentoUI extends javax.swing.JFrame {
         actualizarTabla();
     }
 
-    // ✅ Constructor auxiliar (sin MainUI)
     public DepartamentoUI(DepartamentoController departamentoController) {
         this(departamentoController, null);
     }
@@ -53,7 +51,6 @@ public class DepartamentoUI extends javax.swing.JFrame {
         }
     }
 
-    // 🔹 Método para volver al menú principal
     private void volverAMenu() {
         this.dispose();
         mainUI.setVisible(true);
