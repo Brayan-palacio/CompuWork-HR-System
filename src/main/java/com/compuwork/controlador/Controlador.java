@@ -5,15 +5,12 @@ import com.compuwork.modelo.Departamento;
 import java.util.ArrayList;
 
 public class Controlador {
-    // Singleton
     private static Controlador instance;
 
-    // Listas en memoria
     private ArrayList<Empleado> empleados = new ArrayList<>();
     private ArrayList<Departamento> departamentos = new ArrayList<>();
 
     private Controlador() {
-        // Constructor privado (solo accesible internamente)
     }
 
     public static Controlador getInstance() {
