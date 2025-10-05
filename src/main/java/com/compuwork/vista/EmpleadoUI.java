@@ -17,9 +17,8 @@ public class EmpleadoUI extends javax.swing.JFrame {
     private EmpleadoController controlador;
     private DepartamentoController departamentoController;
     private DefaultTableModel modeloTabla;
-    private MainUI mainUI; // referencia opcional
+    private MainUI mainUI;
 
-    // ✅ Constructor principal (con MainUI)
     public EmpleadoUI(EmpleadoController empleadoController,
                       DepartamentoController departamentoController,
                       MainUI mainUI) {
@@ -31,7 +30,6 @@ public class EmpleadoUI extends javax.swing.JFrame {
         configurarUI();
     }
 
-    // ✅ Constructor auxiliar (sin MainUI)
     public EmpleadoUI(EmpleadoController empleadoController,
                       DepartamentoController departamentoController) {
         this(empleadoController, departamentoController, null);
